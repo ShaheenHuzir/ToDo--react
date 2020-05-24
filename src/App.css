@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding :0;
+  background-color: whitesmoke;
+  font-family: helvetica;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo_container{
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 30px;
+  padding: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.display_container{
+  width: 80%;
+  margin:5px;
+  padding:2px;
+  display:flex;
+  justify-content:center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display_container .todoDisp{
+  width:100%;
+  padding:5px;
+  
+}
+
+.display_container .todoDisp .todoItem{
+  margin: 25px;
+  width: 100%;
+  height: 16vh;
+  padding: 15px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border : 0.5px solid black;
+  font-size: 48px;
+}
+
+.display_container .todoDisp .todoItem .todoText{
+
+  width:62.5%; 
+
+}
+.display_container .todoDisp .todoItem:hover{
+ box-shadow: #100c08 6.15px 6.15px;
+}
+
+input{
+  width: 250px;
+  padding: 2px;
+  font-size: 24px;
+  background-color: white;
+}
+
+input:focus{
+  border: lightskyblue 3px solid;
+  box-shadow: lightskyblue 2px 2px 2px;
+}
+
+button{
+  width: 120px;
+  padding: 4px;
+  font-size: 16px;
+  border-radius: 16px;
+  background-color: #d3d3d3;
+  font-weight: 600;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #65ff00;
+  border: 2px solid black;
+  box-shadow: silver 2px 2px;
 }
